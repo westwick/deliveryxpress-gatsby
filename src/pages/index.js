@@ -1,16 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default class IndexPage extends React.Component {
+  componentDidMount() {
+    AOS.init()
+  }
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
     return (
       <div className="home">
-        <div className="hero flex-centered">
-          <h1 className="text-center">Get whatever you need.<br />Get it fast.</h1>
+        <div className="hero flex-centered" >
+          <h1 className="text-center" data-aos="zoom-in">Get whatever you need.<br />Get it fast.</h1>
         </div>
         <section className="section" style={{ borderTop: '1px solid #e5e5e5' , background: '#fbfbfb'}}>
           <div className="container">
@@ -20,8 +24,9 @@ export default class IndexPage extends React.Component {
             <div className="posts-wrapper">
             {posts
               .filter(post => post.node.frontmatter.templateKey === 'blog-post')
-              .map(({ node: post }) => (
+              .map(({ node: post }, index) => (
                 <div
+                  data-aos="fade-up" data-aos-offset={120 + (100 * index)}
                   className="content"
                   key={post.id}
                 >

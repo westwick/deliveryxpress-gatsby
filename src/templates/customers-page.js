@@ -9,7 +9,7 @@ export const CustomersPageTemplate = ({ image, title, content, contentComponent 
     <div className="customers-page">
       <div className="section-head full-width-image-container"
           style={{ background: `linear-gradient(to top, rgba(18,9,9,.96) 0%,rgba(18,9,9,0.24) 100%), url(${image}) center center no-repeat`, backgroundSize: 'cover'}}>
-        {title}
+        <h2 data-aos="zoom-in-down">{title}</h2>
       </div>
       <section className="section section--gradient">
         <div className="container">
