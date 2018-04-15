@@ -1,6 +1,6 @@
 ---
 templateKey: customers-page
-title: Customers
+title: 'Your City, Delivered'
 image: /img/citywide.jpg
 ---
 ### Shade-grown coffee
