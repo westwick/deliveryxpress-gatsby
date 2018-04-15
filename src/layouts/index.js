@@ -9,6 +9,7 @@ import './all.sass'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
+      <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" />
       <title>DeliveryXpress</title>
       {/* <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
@@ -22,7 +23,6 @@ const TemplateWrapper = ({ children }) => (
     <div className="app-main">{children()}</div>
     <Footer />
     <noscript id="deferred-styles">
-      <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" />
     </noscript>
     <script
