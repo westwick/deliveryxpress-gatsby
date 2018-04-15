@@ -8,38 +8,45 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-          </div>
-          {posts
-            .filter(post => post.node.frontmatter.templateKey === 'blog-post')
-            .map(({ node: post }) => (
-              <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                key={post.id}
-              >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            ))}
+      <div className="home">
+        <div className="hero flex-centered">
+          <h1 className="text-center">Get whatever you need.<br />Get it fast.</h1>
         </div>
-      </section>
+        <section className="section">
+          <div className="container">
+            <div className="content">
+              <h1 className="has-text-weight-bold is-size-2">Latest News</h1>
+            </div>
+            <div className="posts-wrapper">
+            {posts
+              .filter(post => post.node.frontmatter.templateKey === 'blog-post')
+              .map(({ node: post }) => (
+                <div
+                  className="content"
+                  key={post.id}
+                >
+                  <p className="post-title">
+                    <Link className="has-text-primary" to={post.fields.slug}>
+                      {post.frontmatter.title}
+                    </Link>
+                  </p>
+                  <p className="post-date">
+                    <small>{post.frontmatter.date}</small>
+                  </p>
+                  <p>
+                    {post.excerpt}
+                    <br />
+                    <br />
+                    <Link className="button more-button" to={post.fields.slug}>
+                      Read More <i className="fas fa-chevron-circle-right"></i>
+                    </Link>
+                  </p>
+                </div>
+              ))}
+              </div>
+          </div>
+        </section>
+      </div>
     )
   }
 }
@@ -54,10 +61,13 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      limit: 5
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 150)
           id
           fields {
             slug

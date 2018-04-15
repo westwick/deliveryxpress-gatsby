@@ -1,7 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-$kaldi-red: #FD461E
+$kaldi-red: #ED1C24
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
@@ -40,3 +40,116 @@ $primary-invert: $kaldi-red-invert
   margin-top: 0 !important
 
 @import "~bulma"
+
+::-webkit-scrollbar
+  width: 8px
+  height: 8px
+
+::-webkit-scrollbar-track
+  background: #f1f1f1
+  -webkit-box-shadow: inset 0 0 5px rgba(200,200,200,.3)
+
+::-webkit-scrollbar-thumb
+  border-radius: 8px
+  -webkit-box-shadow: inset 0 0 5px rgba(200,200,200,.3)
+  background: rgba(128,128,128,.82)
+
+.hero
+  height: calc(100vh - 80px)
+  padding-bottom: 80px
+  h1
+    font-size: 72px
+
+.app-main
+  min-height: calc(100vh - 480px)
+
+.flex-centered
+  display: flex
+  align-items: center
+  justify-content: center
+
+.text-center
+  text-align: center
+
+nav
+  border-top: 3px solid $primary
+  box-shadow: 1px 1px 1px rgba(200,200,200,.3)
+  height: 80px
+  a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link.is-active
+    color: $primary
+  .navbar-item, .navitem-register
+    transition: all 0.3s ease-in-out
+    font-weight: bold
+    text-transform: uppercase
+    font-size: 16px
+  .navitem-register 
+    padding: 4px 16px
+    background: $primary
+    color: #fff !important
+    border-radius: 16px
+    margin-left: 16px
+  .nav-active
+    color: $primary
+  img
+    height: 40px !important
+    width: auto !important
+    max-height: none !important
+
+
+body
+  background-color: #f8f8f8
+
+*
+  font-family: 'Karla', sans-serif
+
+p
+  font-size: 20px
+
+.button
+  text-transform: uppercase
+
+footer
+  height: 400px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  background: #2a2a2a
+  color: #bfbfbf
+  .social-media
+    margin-bottom: 16px
+  .icon
+    text-align: center
+    font-size: 24px
+    color: #2a2a2a
+    text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5)
+    & + .icon
+      margin-left: 24px
+
+.posts-wrapper
+  display: flex
+  .content
+    width: 33%
+    height: 280px
+    & + .content
+      margin-left: 24px
+  .post-title:not(:last-child)
+    font-size: 24px
+    line-height: 1
+    margin-bottom: 0
+    font-weight: bold
+  .post-date
+    font-size: 15px
+    color: #AAA
+    text-transform: uppercase
+  .more-button
+    border-radius: 16px
+    i
+      margin-left: 8px
+      color: $primary
+      font-size: 14px
+
+.card
+  border-radius: 2px
+  box-shadow: 0px 0px 5px rgba(200,200,200,.3)
+  padding: 40px
