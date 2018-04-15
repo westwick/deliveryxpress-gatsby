@@ -28,8 +28,8 @@ export const BlogPostTemplate = ({
               <p>{description}</p>
               <PostContent content={content} />
               {tags && tags.length ? (
-                <div style={{ marginTop: `4rem` }}>
-                  <h4>Tags</h4>
+                <div className="post-tags">
+                  <h4><i className="fas fa-tags"></i> Tags</h4>
                   <ul className="taglist">
                     {tags.map(tag => (
                       <li key={tag + `tag`}>
@@ -63,7 +63,7 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={<Helmet title={`${post.frontmatter.title} | DeliveryXpress News`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />

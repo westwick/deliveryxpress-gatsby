@@ -75,6 +75,12 @@ nav
   border-top: 3px solid $primary
   box-shadow: 1px 1px 1px rgba(200,200,200,.3)
   height: 80px
+  position: fixed !important
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 99
+
   a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link.is-active
     color: $primary
   .navbar-item, .navitem-register
@@ -98,6 +104,7 @@ nav
 
 body
   background-color: #f8f8f8
+  padding-top: 80px
 
 *
   font-family: 'Karla', sans-serif
@@ -149,7 +156,22 @@ footer
       color: $primary
       font-size: 14px
 
+.post-tags
+  border-top: 1px solid #e5e5e5
+  margin-top: 4rem
+  padding-top: 2rem
+  i
+    color: #b5b5b5
+    font-size: 16px
+    margin-right: 8px
+
 .card
   border-radius: 2px
   box-shadow: 0px 0px 5px rgba(200,200,200,.3)
   padding: 40px
+
+.full-width-image-container
+  margin-top: 0
+  margin-bottom: 0
+  color: #fff
+  font-size: 48px

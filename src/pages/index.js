@@ -12,7 +12,7 @@ export default class IndexPage extends React.Component {
         <div className="hero flex-centered">
           <h1 className="text-center">Get whatever you need.<br />Get it fast.</h1>
         </div>
-        <section className="section">
+        <section className="section" style={{ borderTop: '1px solid #e5e5e5' , background: '#fbfbfb'}}>
           <div className="container">
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Latest News</h1>
@@ -38,7 +38,7 @@ export default class IndexPage extends React.Component {
                     <br />
                     <br />
                     <Link className="button more-button" to={post.fields.slug}>
-                      Read More <i className="fas fa-chevron-circle-right"></i>
+                      Read More <i className="fas fa-angle-right"></i>
                     </Link>
                   </p>
                 </div>
@@ -62,7 +62,6 @@ IndexPage.propTypes = {
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      limit: 5
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
