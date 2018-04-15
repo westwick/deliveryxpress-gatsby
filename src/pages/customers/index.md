@@ -1,7 +1,7 @@
 ---
 templateKey: customers-page
 title: 'Your City, Delivered'
-image: /img/citywide.jpg
+image: /img/citywide2.jpg
 ---
 ## The standard Lorem Ipsum passage, used since the 1500s
 
