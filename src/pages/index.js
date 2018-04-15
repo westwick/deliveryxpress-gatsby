@@ -16,7 +16,7 @@ export default class IndexPage extends React.Component {
     return (
       <div className="home">
         <div className="hero flex-centered" >
-          <h1 className="text-center" data-aos="zoom-in">Get whatever you need.<br />Get it fast.</h1>
+          <h1 className="text-center" data-aos="zoom-in">Right now delivery<span>&trade;</span></h1>
         </div>
         <section className="section" style={{ borderTop: '1px solid #e5e5e5' , background: '#fbfbfb'}}>
           <div className="container">
