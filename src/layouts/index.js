@@ -30,9 +30,8 @@ const TemplateWrapper = ({ children }) => (
     <script
       dangerouslySetInnerHTML={{
         __html: `
-          alert('wtf')
           var loadDeferredStyles = function() {
-          console.log('loaded')
+          console.log('loaded styles')
           var addStylesNode = document.getElementById("deferred-styles");
           var replacement = document.createElement("div");
           replacement.innerHTML = addStylesNode.textContent;
