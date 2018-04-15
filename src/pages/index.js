@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-import AOS from 'aos'
+// import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 export default class IndexPage extends React.Component {
   componentDidMount() {
+    const isBrowser = typeof window !== 'undefined'
+    const AOS = isBrowser ? require('aos') : undefined
     AOS.init()
   }
   render() {
