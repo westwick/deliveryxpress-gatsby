@@ -25,9 +25,9 @@ const Navbar = () => (
           Businesses
         </Link>
         <div className="nav-item flex-centered">
-          <Link className="navitem-register" to="/products" activeClassName="nav-active">
+          <a className="navitem-register">
             Register
-          </Link>
+          </a>
         </div>
       </div>
     </div>
