@@ -1,7 +1,7 @@
 ---
 templateKey: customers-page
 title: 'Your City, Delivered'
-image: /img/citywide2.jpg
+image: /img/toronto-skyline-night-view.jpg
 ---
 ## Anything and everything
 
