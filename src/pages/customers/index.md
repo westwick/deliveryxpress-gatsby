@@ -29,13 +29,13 @@ Get what you want with right now delivery
 
 
 
-DX Collective
+**DX Collective**
 
 Allow us to make a route with other packages and save money
 
 DX Collective matches you with other customers in the same area. It's always the cheapest way to to get your package delivered . And choosing this option only adds less than an hour to your delivery time.
 
-Skip the wait
+**Skip the wait**
 
 Request right now delivery at anytime and you will have your package delivered in less than an hour guaranteed. And with multiple vehicle options, delivery's large or small we've got you covered.
 
@@ -47,13 +47,13 @@ and is quickly expanding to other cities in North America
 
 
 
-Create your account
+**Create your account**
 
 Sign up, get the app, and you’re all set to take rides—and stops along the way.
 
 
 
-SIGN UP TO Deliver
+**SIGN UP TO Deliver**
 
 Already have an account?
 
@@ -61,4 +61,4 @@ Invite your friends to give DeliveryXpress a spin. When they get their first pac
 
 
 
-INVITE FRIENDS
+**INVITE FRIENDS**
