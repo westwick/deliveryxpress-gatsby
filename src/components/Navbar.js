@@ -13,21 +13,28 @@ const Navbar = () => (
             <img src={logo} alt="DeliveryXpress Logo" />
           </figure>
         </Link>
+        <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
       <div className="navbar-end">
-        <Link className="navbar-item" to="/customers" activeClassName="nav-active">
-          Customers
-        </Link>
-        <Link className="navbar-item" to="/drivers" activeClassName="nav-active">
-          Drivers
-        </Link>
-        <Link className="navbar-item" to="/businesses" activeClassName="nav-active">
-          Businesses
-        </Link>
-        <div className="nav-item flex-centered">
-          <a className="navitem-register">
-            Register
-          </a>
+        <div className="navbar-menu">
+          <Link className="navbar-item" to="/customers" activeClassName="nav-active">
+            Customers
+          </Link>
+          <Link className="navbar-item" to="/drivers" activeClassName="nav-active">
+            Drivers
+          </Link>
+          <Link className="navbar-item" to="/businesses" activeClassName="nav-active">
+            Businesses
+          </Link>
+          <div className="nav-item flex-centered">
+            <a className="navitem-register">
+              Register
+            </a>
+          </div>
         </div>
       </div>
     </div>

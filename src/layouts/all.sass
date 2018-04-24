@@ -55,10 +55,40 @@ $primary-invert: $kaldi-red-invert
   background: rgba(128,128,128,.82)
 
 .hero
-  height: calc(100vh - 80px)
+  height: 700px
   padding-bottom: 80px
   h1
     font-size: 72px
+    font-weight: bold
+    line-height: 1
+  h2
+    font-size: 40px
+    font-weight: 300
+  .hero-logo
+    width: auto
+    height: 50px
+    margin-bottom: 24px
+
+.hero-signup
+  margin-top: 40px
+  background: #333
+  padding: 12px
+  border-radius: 2px
+  .name-input
+    width: 225px
+  .email-input
+    margin: 0 10px
+    width: 300px
+  .btn-signup
+    padding: 12px 32px
+    font-size: 16px
+    font-weight: bold
+    border-radius: 2px
+    background: $primary
+    border: none
+    box-shadow: none
+    color: #fff
+    cursor: pointer
 
 .app-main
   min-height: calc(100vh - 480px)
@@ -70,6 +100,19 @@ $primary-invert: $kaldi-red-invert
 
 .text-center
   text-align: center
+
+.btn
+  padding: 8px 24px
+  color: #4a4a4a
+  border: 2px solid #4a4a4a
+  border-radius: 40px
+  font-weight: bold
+  text-transform: uppercase
+  font-size: 16px
+  transition: all 0.3s ease-in-out
+  &:hover
+    color: $primary
+    border-color: $primary
 
 nav
   border-top: 3px solid $primary
@@ -89,10 +132,10 @@ nav
     text-transform: uppercase
     font-size: 16px
   .navitem-register 
-    padding: 4px 16px
-    background: $primary
-    color: #fff !important
-    border-radius: 16px
+    padding: 4px 24px
+    color: #4a4a4a !important
+    border: 2px solid #4a4a4a
+    border-radius: 40px
     margin-left: 16px
   .nav-active
     color: $primary
@@ -101,6 +144,11 @@ nav
     width: auto !important
     max-height: none !important
 
+input[type="text"]
+  border-radius: 2px
+  border: none
+  padding: 12px
+  font-size: 16px
 
 body
   background-color: #f8f8f8
@@ -114,6 +162,36 @@ p
 
 .button
   text-transform: uppercase
+
+.news
+  box-shadow: 0 0 250px rgba(0,0,0,.55)
+  background: #fbfbfb
+
+.whyus
+  h2
+    font-size: 40px
+    font-weight: bold
+    text-align: center
+    margin-bottom: 3rem
+  h3
+    font-size: 32px
+    font-weight: bold
+  img 
+    width: 100%
+    height: auto
+  p
+    margin-bottom: 2rem
+  .whyus-section
+    margin-top: 3rem
+
+.row-reverse
+  flex-direction: row-reverse
+
+.fed
+  display: flex
+  flex-direction: column
+  align-items: left
+  justify-content: center
 
 footer
   height: 400px
@@ -134,12 +212,6 @@ footer
       margin-left: 24px
 
 .posts-wrapper
-  display: flex
-  .content
-    width: 33%
-    height: 280px
-    & + .content
-      margin-left: 24px
   .post-title:not(:last-child)
     font-size: 24px
     line-height: 1
