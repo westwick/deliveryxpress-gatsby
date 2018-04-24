@@ -75,7 +75,7 @@ export default class IndexPage extends React.Component {
         <section className="app-download section">
           <div className="container">
             <div className="columns">
-              <div className="column">
+              <div className="column fed">
                 <img src={phone} alt="DeliveryXpress App on Phone" className="img-phone" />
               </div>
               <div className="column fed">
