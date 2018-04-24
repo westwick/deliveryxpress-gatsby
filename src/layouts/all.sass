@@ -58,12 +58,22 @@ $primary-invert: $kaldi-red-invert
   height: 700px
   padding-bottom: 80px
   h1
-    font-size: 72px
     font-weight: bold
     line-height: 1
+    +mobile
+      font-size: 40px
+    +tablet
+      font-size: 50px
+    +desktop
+      font-size: 72px
   h2
-    font-size: 40px
     font-weight: 300
+    +mobile
+      font-size: 20px
+    +tablet
+      font-size: 30px
+    +desktop
+      font-size: 40px
   .hero-logo
     width: auto
     height: 50px
@@ -79,12 +89,14 @@ $primary-invert: $kaldi-red-invert
   z-index: -1
 
 .herobg
-  position: absolute;
-  z-index: -1;
-  top: 80px;
-  width: 100vw;
-  height: 700px;
-  object-fit: cover;
+  position: absolute
+  z-index: -1
+  top: 59px
+  width: 100vw
+  height: 700px
+  object-fit: cover
+  +desktop
+    top: 80px
 
 .hero-signup
   margin-top: 40px
@@ -106,6 +118,13 @@ $primary-invert: $kaldi-red-invert
     box-shadow: none
     color: #fff
     cursor: pointer
+  +mobile
+    .name-input, .email-input, .btn-signup
+      margin: 0 auto 10px
+      display: block
+      width: 80vw
+    .btn-signup
+      margin-bottom: 0
 
 .app-main
   min-height: calc(100vh - 480px)
@@ -169,12 +188,16 @@ $primary-invert: $kaldi-red-invert
 nav
   border-top: 3px solid $primary
   box-shadow: 1px 1px 1px rgba(200,200,200,.3)
-  height: 80px
+  height: auto
   position: fixed !important
   top: 0
   left: 0
   width: 100%
   z-index: 99
+  +desktop
+    height: 80px
+  .navbar-burger
+    height: auto
 
   a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link.is-active
     color: $primary
@@ -203,7 +226,9 @@ input[type="text"]
   font-size: 16px
 
 body
-  padding-top: 80px
+  padding-top: 59px
+  +desktop
+    padding-top: 80px
 
 *
   font-family: 'Karla', sans-serif
@@ -224,6 +249,8 @@ p
   height: 700px
   background: url(../img/redstripesbg.jpg) top left
   background-size: cover
+  +mobile
+    height: auto
   h2
     font-size: 40px
     font-weight: bold
@@ -312,3 +339,9 @@ footer
   margin-bottom: 0
   color: #fff
   font-size: 48px
+
+[data-aos="blurin"]
+  filter: blur(15px)
+  transition-property: filter
+  &.aos-animate 
+    filter: blur(0)

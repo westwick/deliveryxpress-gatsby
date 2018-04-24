@@ -92,31 +92,31 @@ export default class IndexPage extends React.Component {
         <section className="whyus section">
           <div className="container">
             <h2>Why DeliveryXpress?</h2>
-            <div className="columns whyus-section">
-              <div className="column is-8">
-                <img src={forcustomers} />
+            <div className="columns whyus-section is-desktop">
+              <div className="column is-8-desktop">
+                <img src={forcustomers} data-aos="blurin" />
               </div>
-              <div className="column is-4 fed">
+              <div className="column is-4-desktop fed">
                 <h3>Customers</h3>
                 <p>Anything and everything, Get what you want with right now delivery, Tap a button, get it delivered, Choose your package type and set your location.You'll see your driver's picture and vehicle details, and can track their arrival on the map.</p>
                 <Link to="/customers" className="btn">Learn More</Link>
               </div>
             </div>
-            <div className="columns row-reverse whyus-section">
-              <div className="column is-8">
+            <div className="columns row-reverse whyus-section is-desktop">
+              <div className="column is-8-desktop">
                 <img src={fordrivers} />
               </div>
-              <div className="column is-4 fed">
+              <div className="column is-4-desktop fed">
                 <h3>Drivers</h3>
                 <p>Anything and everything, Get what you want with right now delivery, Tap a button, get it delivered, Choose your package type and set your location.You'll see your driver's picture and vehicle details, and can track their arrival on the map.</p>
                 <Link to="/drivers" className="btn">Learn More</Link>
               </div>
             </div>
-            <div className="columns whyus-section">
-              <div className="column is-8">
+            <div className="columns whyus-section is-desktop">
+              <div className="column is-8-desktop">
                 <img src={forbusinesses} />
               </div>
-              <div className="column is-4 fed">
+              <div className="column is-4-desktop fed">
                 <h3>Businesses</h3>
                 <p>Anything and everything, Get what you want with right now delivery, Tap a button, get it delivered, Choose your package type and set your location.You'll see your driver's picture and vehicle details, and can track their arrival on the map.</p>
                 <Link to="/businesses" className="btn">Learn More</Link>
