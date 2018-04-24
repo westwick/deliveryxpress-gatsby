@@ -18,6 +18,7 @@ const TemplateWrapper = ({ children }) => (
       <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
       <meta name="theme-color" content="#f8f8f8" />
       <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet" />
     </Helmet>
     <Navbar />
     <div className="app-main">{children()}</div>
