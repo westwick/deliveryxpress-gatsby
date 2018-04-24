@@ -5,7 +5,9 @@ image: /img/camaro.jpg
 heading: Test2
 description: Test
 intro:
-  blurbs: []
+  blurbs:
+    - image: /img/camaro.jpg
+      text: heheh
   heading: Test
   description: Test
 main:
@@ -20,11 +22,18 @@ main:
   image3:
     alt: Test
     image: ''
-testimonials: []
+testimonials:
+  - author: me
+    quote: Test
 full_image: /img/citywide.jpg
 pricing:
   heading: Test
   description: Test
-  plans: []
+  plans:
+    - description: test
+      items:
+        - sdfsdf
+      plan: test
+      price: '3233'
 ---
 

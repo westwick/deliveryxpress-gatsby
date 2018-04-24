@@ -1,16 +1,64 @@
 ---
 templateKey: customers-page
 title: 'Your City, Delivered'
-image: /img/citywide2.jpg
+image: /img/toronto-skyline-night-view.jpg
 ---
-## The standard Lorem Ipsum passage, used since the 1500s
+## Anything and everything
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Get what you want with right now delivery
 
-## Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+## 
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+## Tap a button, get it delivered
 
-## 1914 translation by H. Rackham
+## Choose your package type and set your location. You'll see your driver's picture and vehicle details, and can track their arrival on the map.
 
-"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+## 
+
+## Always on, always available
+
+## No phone calls to make, no pick-ups to schedule. With 24/7 availability, request a delivery any time of day, any day of the year.
+
+## 
+
+## You rate, we listen
+
+## Rate your delivery and provide anonymous feedback about your experience. Your input helps us make every delivery a 5-star experience.
+
+
+
+
+
+**DX Collective**
+
+Allow us to make a route with other packages and save money
+
+DX Collective matches you with other customers in the same area. It's always the cheapest way to to get your package delivered . And choosing this option only adds less than an hour to your delivery time.
+
+**Skip the wait**
+
+Request right now delivery at anytime and you will have your package delivered in less than an hour guaranteed. And with multiple vehicle options, delivery's large or small we've got you covered.
+
+
+
+DeliveryXpress has launched in Toronto
+
+and is quickly expanding to other cities in North America
+
+
+
+**Create your account**
+
+Sign up, get the app, and you’re all set to take rides—and stops along the way.
+
+
+
+**SIGN UP TO Deliver**
+
+Already have an account?
+
+Invite your friends to give DeliveryXpress a spin. When they get their first package delivered, you’ll get a free delivery in return. You’ll be getting what you need in no time.
+
+
+
+**INVITE FRIENDS**
