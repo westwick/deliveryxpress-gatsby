@@ -5,6 +5,10 @@ import Link from 'gatsby-link'
 import 'aos/dist/aos.css'
 import logoFull from '../img/dx-full.png'
 import Img from 'gatsby-image'
+import phone from '../img/phone.png'
+import forcustomers from '../img/forcustomers.jpg'
+import forbusinesses from '../img/forbusinesses.jpg'
+import fordrivers from '../img/fordrivers.jpg'
 
 export default class IndexPage extends React.Component {
   componentDidMount() {
@@ -72,13 +76,14 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="columns">
               <div className="column">
-                <img />
+                <img src={phone} alt="DeliveryXpress App on Phone" className="img-phone" />
               </div>
-              <div className="column">
+              <div className="column fed">
                 <h2>Download our official app</h2>
                 <p>DeliveryXpress is a technology platform that connects local delivery resources with hiring clients in real-time. Delivery applications range from quick service and restaurant food to a traditional local courier.</p>
                 <div className="download-buttons">
-                  
+                  <button className="btn-black"><i className="fab fa-apple"></i> App Store</button>
+                  <button className="btn-red"><i className="fab fa-google-play"></i> Play Store</button>
                 </div>
               </div>
             </div>
@@ -89,31 +94,31 @@ export default class IndexPage extends React.Component {
             <h2>Why DeliveryXpress?</h2>
             <div className="columns whyus-section">
               <div className="column is-8">
-                <img src="http://placekitten.com/600/201" />
+                <img src={forcustomers} />
               </div>
               <div className="column is-4 fed">
                 <h3>Customers</h3>
-                <p>Letraset, a French lettering company, popularized the Lorem Ipsum passage in the 1960s with their dry-transfer sheets.</p>
+                <p>Anything and everything, Get what you want with right now delivery, Tap a button, get it delivered, Choose your package type and set your location.You'll see your driver's picture and vehicle details, and can track their arrival on the map.</p>
                 <Link to="/customers" className="btn">Learn More</Link>
               </div>
             </div>
             <div className="columns row-reverse whyus-section">
               <div className="column is-8">
-                <img src="http://placekitten.com/600/200" />
+                <img src={fordrivers} />
               </div>
               <div className="column is-4 fed">
                 <h3>Drivers</h3>
-                <p>Letraset, a French lettering company, popularized the Lorem Ipsum passage in the 1960s with their dry-transfer sheets.</p>
+                <p>Anything and everything, Get what you want with right now delivery, Tap a button, get it delivered, Choose your package type and set your location.You'll see your driver's picture and vehicle details, and can track their arrival on the map.</p>
                 <Link to="/drivers" className="btn">Learn More</Link>
               </div>
             </div>
             <div className="columns whyus-section">
               <div className="column is-8">
-                <img src="http://placekitten.com/600/202" />
+                <img src={forbusinesses} />
               </div>
               <div className="column is-4 fed">
                 <h3>Businesses</h3>
-                <p>Letraset, a French lettering company, popularized the Lorem Ipsum passage in the 1960s with their dry-transfer sheets.</p>
+                <p>Anything and everything, Get what you want with right now delivery, Tap a button, get it delivered, Choose your package type and set your location.You'll see your driver's picture and vehicle details, and can track their arrival on the map.</p>
                 <Link to="/businesses" className="btn">Learn More</Link>
               </div>
             </div>

@@ -119,6 +119,7 @@ $primary-invert: $kaldi-red-invert
   text-align: center
 
 .btn
+  cursor: pointer
   padding: 8px 24px
   color: #4a4a4a
   border: 2px solid #4a4a4a
@@ -130,6 +131,40 @@ $primary-invert: $kaldi-red-invert
   &:hover
     color: $primary
     border-color: $primary
+
+.btn-black
+  cursor: pointer
+  padding: 10px 30px
+  color: #fff
+  background: #232323
+  border: none
+  border-radius: 50px
+  font-weight: bold
+  text-transform: uppercase
+  font-size: 16px
+  transition: all 0.3s ease-in-out
+  margin-right: 2rem
+  i
+    margin-right: 10px
+  &:hover
+    color: $primary
+
+.btn-red
+  cursor: pointer
+  padding: 10px 30px
+  color: #fff
+  background: $primary
+  border: none
+  border-radius: 50px
+  font-weight: bold
+  text-transform: uppercase
+  font-size: 16px
+  transition: all 0.3s ease-in-out
+  i
+    margin-right: 10px
+  &:hover
+    background: #232323
+    color: $primary
 
 nav
   border-top: 3px solid $primary
@@ -182,6 +217,20 @@ p
 .news
   box-shadow: 0 0 250px rgba(0,0,0,.55)
   background: #fbfbfb
+  transform: scale(1)
+  z-index: 2
+
+.app-download
+  height: 700px
+  background: url(../img/redstripesbg.jpg) top left
+  background-size: cover
+  h2
+    font-size: 40px
+    font-weight: bold
+  p
+    padding-right: 8rem
+    font-size: 16px
+    margin-bottom: 2rem
 
 .whyus
   h2
