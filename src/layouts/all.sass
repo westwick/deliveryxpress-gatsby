@@ -164,6 +164,7 @@ $primary-invert: $kaldi-red-invert
   transition: all 0.3s ease-in-out
   margin-right: 2rem
   margin-bottom: 10px
+  outline: none
   i
     margin-right: 10px
   &:hover
@@ -180,6 +181,7 @@ $primary-invert: $kaldi-red-invert
   text-transform: uppercase
   font-size: 16px
   transition: all 0.3s ease-in-out
+  outline: none
   i
     margin-right: 10px
   &:hover
@@ -364,3 +366,27 @@ footer
   transition-property: filter
   &.aos-animate 
     filter: blur(0)
+
+.modal
+  z-index: 100
+  .modal-content
+    padding: 3rem 2rem
+    background: #fff
+    border-radius: 3px
+    text-align: center
+    opacity: 0
+    transition: opacity 0.4s ease-in-out
+  .modal-background
+    background-color: rgba(10, 10, 10, 0.0)
+    transition: all 0.2s ease-in-out
+  &.is-active 
+    .modal-background
+      background-color: rgba(10, 10, 10, 0.86)
+    .modal-content
+      opacity: 1
+  h2
+    font-size: 30px
+    font-weight: bold
+    margin-bottom: 1rem
+  p
+    font-size: 16px

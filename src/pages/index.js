@@ -11,10 +11,20 @@ import forbusinesses from '../img/forbusinesses.jpg'
 import fordrivers from '../img/fordrivers.jpg'
 
 export default class IndexPage extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {showModal: false}
+  }
   componentDidMount() {
     const isBrowser = typeof window !== 'undefined'
     const AOS = isBrowser ? require('aos') : undefined
     AOS.init()
+  }
+  toggleModalOn = () => {
+    this.setState({showModal: true})
+  }
+  toggleModalOff = () => {
+    this.setState({showModal: false})
   }
   render() {
     const { data } = this.props
@@ -82,8 +92,8 @@ export default class IndexPage extends React.Component {
                 <h2>Download our official app</h2>
                 <p>DeliveryXpress is a technology platform that connects local delivery resources with hiring clients in real-time. Delivery applications range from quick service and restaurant food to a traditional local courier.</p>
                 <div className="download-buttons">
-                  <button className="btn-black"><i className="fab fa-apple"></i> App Store</button>
-                  <button className="btn-red"><i className="fab fa-google-play"></i> Play Store</button>
+                  <button className="btn-black" onClick={this.toggleModalOn}><i className="fab fa-apple"></i> App Store</button>
+                  <button className="btn-red" onClick={this.toggleModalOn}><i className="fab fa-google-play"></i> Play Store</button>
                 </div>
               </div>
             </div>
@@ -94,7 +104,7 @@ export default class IndexPage extends React.Component {
             <h2>Why DeliveryXpress?</h2>
             <div className="columns whyus-section is-desktop">
               <div className="column is-8-desktop">
-                <img src={forcustomers} data-aos="blurin" />
+                <img src={forcustomers} />
               </div>
               <div className="column is-4-desktop fed">
                 <h3>Customers</h3>
@@ -124,6 +134,14 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
+        <div className={this.state.showModal ? 'modal is-active':'modal'}>
+          <div className="modal-background" onClick={this.toggleModalOff}></div>
+          <div className="modal-content">
+            <h2>Coming Soon!</h2>
+            <p>Join our <a href="#">mailing list</a> to be notified about updates to our platform.</p>
+          </div>
+          <button className="modal-close is-large" aria-label="close"></button>
+        </div>
       </div>
     )
   }
