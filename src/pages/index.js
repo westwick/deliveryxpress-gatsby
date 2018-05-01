@@ -13,7 +13,7 @@ import fordrivers from '../img/fordrivers.jpg'
 export default class IndexPage extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {showModal: false}
+    this.state = {showModal: false, showModalContent: false}
   }
   componentDidMount() {
     const isBrowser = typeof window !== 'undefined'
@@ -22,9 +22,15 @@ export default class IndexPage extends React.Component {
   }
   toggleModalOn = () => {
     this.setState({showModal: true})
+    setTimeout(() => {
+      this.setState({showModalContent: true})
+    }, 1)
   }
   toggleModalOff = () => {
-    this.setState({showModal: false})
+    this.setState({showModalContent: false})
+    setTimeout(() => {
+      this.setState({showModal: false})
+    }, 300)
   }
   render() {
     const { data } = this.props
@@ -134,13 +140,13 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        <div className={this.state.showModal ? 'modal is-active':'modal'}>
-          <div className="modal-background" onClick={this.toggleModalOff}></div>
-          <div className="modal-content">
+        <div className={'modal ' + (this.state.showModal ? 'is-active':'')}>
+          <div className={'modal-background ' + (this.state.showModalContent ? 'modal-background-on':'')} onClick={this.toggleModalOff}></div>
+          <div className={'modal-content ' + (this.state.showModalContent ? 'modal-content-on':'')}>
             <h2>Coming Soon!</h2>
             <p>Join our <a href="#">mailing list</a> to be notified about updates to our platform.</p>
           </div>
-          <button className="modal-close is-large" aria-label="close"></button>
+          <button className="modal-close is-large" aria-label="close" onClick={this.toggleModalOff}></button>
         </div>
       </div>
     )
