@@ -1,7 +1,7 @@
 ---
 templateKey: customers-page
 title: Join Our Fleet
-image: /img/driver holding package dx.jpg
+image: /img/driver-holding-package-dx-min.jpg
 ---
 # Set your own schedule
 
