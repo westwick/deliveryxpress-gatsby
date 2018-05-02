@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 // import AOS from 'aos'
 import 'aos/dist/aos.css'
-import logoFull from '../img/dx-full.png'
+import logoFull from '../img/logonew-horiz.jpg'
 import Img from 'gatsby-image'
 import phone from '../img/phone.png'
 import forcustomers from '../img/forcustomers.jpg'
@@ -164,7 +164,7 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    herobg: file(id: { regex: "/herobg/" }) {
+    herobg: file(id: { regex: "/bgfull/" }) {
       childImageSharp {
         sizes(maxWidth: 1920) {
           ...GatsbyImageSharpSizes
