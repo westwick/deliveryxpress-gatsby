@@ -1,7 +1,7 @@
 ---
 templateKey: customers-page
 title: Join Our Fleet
-image: /img/camaro.jpg
+image: /img/driver holding package dx.jpg
 ---
 # Set your own schedule
 
