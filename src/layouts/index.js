@@ -26,7 +26,9 @@ const TemplateWrapper = ({ children }) => (
     <Footer />
     <noscript id="deferred-styles">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" />
+
     </noscript>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4497176.js"></script>
     <script
       dangerouslySetInnerHTML={{
         __html: `
