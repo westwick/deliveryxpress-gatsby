@@ -13,13 +13,9 @@ Get what you want with right now delivery
 
 Choose your package type and set your location. You'll see your driver's picture and vehicle details, and can track their arrival on the map.
 
-
-
 ## Always on, always available
 
 No phone calls to make, no pick-ups to schedule. With 24/7 availability, request a delivery any time of day, any day of the year.
-
-
 
 ## You rate, we listen
 
@@ -35,19 +31,8 @@ DX Collective matches you with other customers in the same area. It's always the
 
 Request right now delivery at anytime and you will have your package delivered in less than an hour guaranteed. And with multiple vehicle options, delivery's large or small we've got you covered.
 
-DeliveryXpress has launched in Toronto
-
-and is quickly expanding to other cities in North America
-
-## Create your account**
-**
-
-Sign up, get the app, and you’re all set to take rides—and stops along the way.
-
-## SIGN UP TO RECEIVE DELIVERIES
-
-## Already have an account?
-
-Invite your friends to give DeliveryXpress a spin. When they get their first package delivered, you’ll get a free delivery in return. You’ll be getting what you need in no time.
+DeliveryXpress has launched in Toronto and is quickly expanding to other cities in North America
 
 ## **INVITE FRIENDS**
+
+**Invite your friends to give DeliveryXpress a spin. When they get their first package delivered, you’ll get a free delivery in return. You’ll be getting what you need in no time.**
