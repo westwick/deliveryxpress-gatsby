@@ -13,11 +13,16 @@ import fordrivers from '../img/fordrivers.jpg'
 export default class IndexPage extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {showModal: false, showModalContent: false}
+    this.state = {showModal: false, showModalContent: false, showThankyou: false}
   }
   componentDidMount() {
     const isBrowser = typeof window !== 'undefined'
     const AOS = isBrowser ? require('aos') : undefined
+    const url = new URL(window.location.href);
+    const formsubmitted = url.searchParams.get('submit')
+    if (formsubmitted) {
+      this.setState({showThankyou: true})
+    }
     AOS.init()
   }
   toggleModalOn = () => {
@@ -32,11 +37,17 @@ export default class IndexPage extends React.Component {
       this.setState({showModal: false})
     }, 300)
   }
+  toggleThankyouOff = () => {
+    window.location = '/'
+    this.setState({showThankyou: false})
+  }
+  handleFormSubmit = (e) => {
+    // e.preventDefault()
+    console.log('the form was submitted')
+  }
   render() {
     const { data } = this.props
-    console.log(data)
     const { edges: posts } = data.allMarkdownRemark
-    console.log(data)
     return (
       <div className="home">
         <div className="hero flex-centered" >
@@ -47,7 +58,7 @@ export default class IndexPage extends React.Component {
           <h1 className="text-center">Right now delivery</h1>
           <h2 className="text-center">Anything and everything</h2>
           <div className="hero-signup">
-            <form>
+            <form onSubmit={this.handleFormSubmit} method="post" action="/?submit=true">
               <input type="text" placeholder="Full Name" className="name-input" />
               <input type="text" placeholder="Email" className="email-input" />
               <button className="btn-signup">Sign Up</button>
@@ -148,6 +159,14 @@ export default class IndexPage extends React.Component {
           </div>
           <button className="modal-close is-large" aria-label="close" onClick={this.toggleModalOff}></button>
         </div>
+        <div className={'modal ' + (this.state.showThankyou ? 'is-active':'')}>
+          <div className={'modal-background ' + (this.state.showThankyou ? 'modal-background-on':'')} onClick={this.toggleThankyouOff}></div>
+          <div className={'modal-content ' + (this.state.showThankyou ? 'modal-content-on':'')}>
+            <h2>Thank you!</h2>
+            <p>We will notify you about updates on our beta launch this summer.</p>
+          </div>
+          <button className="modal-close is-large" aria-label="close" onClick={this.toggleThankyouOff}></button>
+        </div>
       </div>
     )
   }
@@ -164,7 +183,7 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    herobg: file(id: { regex: "/bgfull/" }) {
+    herobg: file(id: { regex: "/newherobg/" }) {
       childImageSharp {
         sizes(maxWidth: 1920) {
           ...GatsbyImageSharpSizes
