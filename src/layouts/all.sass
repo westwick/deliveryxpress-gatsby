@@ -91,12 +91,32 @@ $primary-invert: $kaldi-red-invert
 .herobg
   position: absolute
   z-index: -1
+  opacity: 0.6
   top: 59px
   width: 100vw
   height: 700px
   object-fit: cover
   +desktop
     top: 80px
+
+.btn-signup
+  padding: 12px 32px
+  font-size: 16px
+  font-weight: bold
+  border-radius: 2px
+  background: $primary
+  border: none
+  box-shadow: none
+  color: #fff
+  cursor: pointer
+
+.modal-signup
+  .name-input, .email-input
+    display: block
+    width: 100%
+    border-radius: 2px
+    border: 1px solid #b8b8b8
+    margin-bottom: 16px
 
 .hero-signup
   margin-top: 40px
@@ -108,16 +128,6 @@ $primary-invert: $kaldi-red-invert
   .email-input
     margin: 0 10px
     width: 300px
-  .btn-signup
-    padding: 12px 32px
-    font-size: 16px
-    font-weight: bold
-    border-radius: 2px
-    background: $primary
-    border: none
-    box-shadow: none
-    color: #fff
-    cursor: pointer
   +mobile
     .name-input, .email-input, .btn-signup
       margin: 0 auto 10px
@@ -227,7 +237,7 @@ nav
     width: 24px
     left: calc(50% - 12px)
 
-input[type="text"]
+input[type="text"], input[type="email"]
   border-radius: 2px
   border: none
   padding: 12px

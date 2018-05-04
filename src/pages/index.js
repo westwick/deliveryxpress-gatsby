@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 // import AOS from 'aos'
 import 'aos/dist/aos.css'
-import logoFull from '../img/logonew-horiz.jpg'
+import logoFull from '../img/logo-horiz.png'
 import Img from 'gatsby-image'
 import phone from '../img/phone.png'
 import forcustomers from '../img/forcustomers.jpg'
@@ -13,7 +13,7 @@ import fordrivers from '../img/fordrivers.jpg'
 export default class IndexPage extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {showModal: false, showModalContent: false, showThankyou: false}
+    this.state = { showModal: false, showModalContent: false, showThankyou: false }
   }
   componentDidMount() {
     const isBrowser = typeof window !== 'undefined'
@@ -21,25 +21,25 @@ export default class IndexPage extends React.Component {
     const url = new URL(window.location.href);
     const formsubmitted = url.searchParams.get('submit')
     if (formsubmitted) {
-      this.setState({showThankyou: true})
+      this.setState({ showThankyou: true })
     }
     AOS.init()
   }
   toggleModalOn = () => {
-    this.setState({showModal: true})
+    this.setState({ showModal: true })
     setTimeout(() => {
-      this.setState({showModalContent: true})
+      this.setState({ showModalContent: true })
     }, 1)
   }
   toggleModalOff = () => {
-    this.setState({showModalContent: false})
+    this.setState({ showModalContent: false })
     setTimeout(() => {
-      this.setState({showModal: false})
+      this.setState({ showModal: false })
     }, 300)
   }
   toggleThankyouOff = () => {
     window.location = '/'
-    this.setState({showThankyou: false})
+    this.setState({ showThankyou: false })
   }
   handleFormSubmit = (e) => {
     // e.preventDefault()
@@ -59,8 +59,8 @@ export default class IndexPage extends React.Component {
           <h2 className="text-center">Anything and everything</h2>
           <div className="hero-signup">
             <form onSubmit={this.handleFormSubmit} method="post" action="/?submit=true">
-              <input type="text" placeholder="Full Name" className="name-input" />
-              <input type="text" placeholder="Email" className="email-input" />
+              <input type="text" name="name" placeholder="Full Name" className="name-input" required />
+              <input type="email" name="email" placeholder="Email" className="email-input" required />
               <button className="btn-signup">Sign Up</button>
             </form>
           </div>
@@ -71,32 +71,32 @@ export default class IndexPage extends React.Component {
               <h1 className="has-text-weight-bold is-size-2">Latest News</h1>
             </div>
             <div className="posts-wrapper columns">
-            {posts
-              .filter(post => post.node.frontmatter.templateKey === 'blog-post')
-              .map(({ node: post }, index) => (
-                <div
-                  className="content column"
-                  key={post.id}
-                >
-                  <p className="post-title">
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
+              {posts
+                .filter(post => post.node.frontmatter.templateKey === 'blog-post')
+                .map(({ node: post }, index) => (
+                  <div
+                    className="content column"
+                    key={post.id}
+                  >
+                    <p className="post-title">
+                      <Link className="has-text-primary" to={post.fields.slug}>
+                        {post.frontmatter.title}
+                      </Link>
+                    </p>
+                    <p className="post-date">
+                      <small>{post.frontmatter.date}</small>
+                    </p>
+                    <p>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="btn" to={post.fields.slug}>
+                        Read More
                     </Link>
-                  </p>
-                  <p className="post-date">
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="btn" to={post.fields.slug}>
-                      Read More
-                    </Link>
-                  </p>
-                </div>
-              ))}
-              </div>
+                    </p>
+                  </div>
+                ))}
+            </div>
           </div>
         </section>
         <section className="app-download section">
@@ -151,17 +151,17 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        <div className={'modal ' + (this.state.showModal ? 'is-active':'')}>
-          <div className={'modal-background ' + (this.state.showModalContent ? 'modal-background-on':'')} onClick={this.toggleModalOff}></div>
-          <div className={'modal-content ' + (this.state.showModalContent ? 'modal-content-on':'')}>
+        <div className={'modal ' + (this.state.showModal ? 'is-active' : '')}>
+          <div className={'modal-background ' + (this.state.showModalContent ? 'modal-background-on' : '')} onClick={this.toggleModalOff}></div>
+          <div className={'modal-content ' + (this.state.showModalContent ? 'modal-content-on' : '')}>
             <h2>Coming Soon!</h2>
             <p>Join our <a href="#">mailing list</a> to be notified about updates to our platform.</p>
           </div>
           <button className="modal-close is-large" aria-label="close" onClick={this.toggleModalOff}></button>
         </div>
-        <div className={'modal ' + (this.state.showThankyou ? 'is-active':'')}>
-          <div className={'modal-background ' + (this.state.showThankyou ? 'modal-background-on':'')} onClick={this.toggleThankyouOff}></div>
-          <div className={'modal-content ' + (this.state.showThankyou ? 'modal-content-on':'')}>
+        <div className={'modal ' + (this.state.showThankyou ? 'is-active' : '')}>
+          <div className={'modal-background ' + (this.state.showThankyou ? 'modal-background-on' : '')} onClick={this.toggleThankyouOff}></div>
+          <div className={'modal-content ' + (this.state.showThankyou ? 'modal-content-on' : '')}>
             <h2>Thank you!</h2>
             <p>We will notify you about updates on our beta launch this summer.</p>
           </div>
